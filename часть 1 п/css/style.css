@@ -34,8 +34,6 @@ body{
     height: 100%;
     width: 100%;
     position: absolute;
-    margin: 2px;
-    padding: 2px;
 }
 
 .wrapper{
@@ -74,22 +72,45 @@ nav .separator{
   margin: 3px 7px;
   background-color: #60b5ed;
 }
+header .menu{
+    position: absolute;
+    right: 28px;
+    bottom: 8px;
+}
+
+header .menu li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+}
+
+header .menu a{
+     color: #128aa7;
+    font-size: 10px;
+}
+
+header .menu a:hover{
+    color: black;
+}
 
 nav .user-offers{
   margin: 0 17px 0 10px;
 }
 
 nav .user-offers a{
-  margin: 0;
-  padding: 0;
+  display: inline;
+  margin: 5px;
+  padding: 5px;
+  float: none;
   color: white;
-}
+  }
 
 nav .user-offers a:hover{
   background-color: transparent;
   color: white;
-  line-height: 32px;
-  border-bottom: 4px inset white;
+  text-decoration: none;
+  float: 0;
+  display: inline;
 }
 
 nav .user-offers img{
@@ -107,8 +128,8 @@ nav .login-reg{
 
 nav .login-reg a{
   display: inline;
-  margin: 0;
-  padding: 0;
+  margin: 5px;
+  padding: 5px;
   float: none;
   color: white;
   border-bottom: 1px solid white;
@@ -116,8 +137,10 @@ nav .login-reg a{
 
 nav .login-reg a:hover{
   color: white;
+  float: 0;
   background: transparent;
-  border-bottom: 4px solid white;
+  border-bottom: 3px solid white;
+  display: inline;
 }
 
 .content{
